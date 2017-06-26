@@ -1,0 +1,4 @@
+<h2>All Directors</h2>
+{{#each model as |director|}}
+  <p>Age: {{director.name}} | ({{director.age}}) | {{#link-to 'directors.director' director.id}}Show{{/link-to}}</p>
+{{/each}}

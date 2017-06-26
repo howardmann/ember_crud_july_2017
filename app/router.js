@@ -12,6 +12,11 @@ Router.map(function() {
       path: ':movie_id'
     });
   });
+  this.route('directors', function() {
+    this.route('director', {
+      path: ':director_id'
+    });
+  });
 });
 
 export default Router;
