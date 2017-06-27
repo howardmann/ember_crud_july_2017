@@ -1,5 +1,7 @@
 <h2>Single MOVIE</h2>
 <p>Title: {{model.title}}</p>
+<p>Box office: {{model.boxOffice}}</p>
+<p>Status: {{model.status}}</p>
 <p>Director: 
   {{#link-to 'directors.director' model.director.id}}
     {{model.director.name}}

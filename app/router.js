@@ -10,7 +10,8 @@ Router.map(function() {
   this.route('movies', function() {
     this.route('movie', {
       path: ':movie_id'
-    });
+    }, function() {});
+    this.route('new');
   });
   this.route('directors', function() {
     this.route('director', {

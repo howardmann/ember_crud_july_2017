@@ -1,0 +1,13 @@
+<h2>NEW movie</h2>
+
+<form {{action 'createMovie' model on="submit"}}>
+  <p>
+    <label>Title:</label>
+    {{input type="text" value=model.title}}
+  </p>
+  <p>
+    <label>Year:</label>
+    {{input type="number" value=model.year}}
+  </p>
+  <input type="submit">
+</form>
