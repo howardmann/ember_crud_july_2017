@@ -7,6 +7,9 @@ export default Ember.Route.extend({
   actions: {
     deleteMovie(movie){
       movie.destroyRecord().then(()=> this.transitionTo('movies'));
+    },
+    updateMovie(model){
+      model.save().then(movie => this.transitionTo('movies.movie', movie));
     }
   }
 });

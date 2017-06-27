@@ -7,5 +7,6 @@
     {{model.director.name}}
   {{/link-to}}
 </p>
+{{#link-to 'movies.movie.edit' model.id}}Edit movie{{/link-to}}
 
 <button {{action "deleteMovie" model}}>DELETE MOVIE</button>
