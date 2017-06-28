@@ -18,6 +18,8 @@ Router.map(function() {
   this.route('directors', function() {
     this.route('director', {
       path: ':director_id'
+    }, function() {
+      this.route('edit');
     });
     this.route('new');
   });

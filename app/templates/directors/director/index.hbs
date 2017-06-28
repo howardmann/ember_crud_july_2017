@@ -11,3 +11,8 @@
     </li>
   {{/each}}
 </ul>
+<p>
+  {{#link-to 'directors.director.edit' model.id}}Edit Director{{/link-to}} 
+</p>
+
+<button {{action "destroyDirector" model}}>DELETE DIRECTOR</button>

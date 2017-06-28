@@ -1,0 +1,22 @@
+<h2>EDIT Director</h2>
+
+<form {{action 'updateDirector' model.director on="submit"}}>
+  <p>
+    <label>Name:</label>
+    {{input type="text" value=model.director.name}}
+  </p>
+  <p>
+    <label>Age:</label>
+    {{input type="number" value=model.director.age}}
+  </p>
+  <p>
+    <label>Select Movies</label>
+    <select>
+      {{#each model.movies as |movie|}}
+        <option value="{{movie.id}}">{{movie.title}}</option>
+      {{/each}}
+    </select>
+  </p>
+  
+  <input type="submit">
+</form>
