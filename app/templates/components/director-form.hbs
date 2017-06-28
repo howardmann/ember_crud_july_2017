@@ -1,6 +1,4 @@
-<h2>EDIT Director</h2>
-
-{{!--<form {{action 'updateDirector' model.director on="submit"}}>
+<form {{action 'componentTrigger' model.director on="submit"}}>
   <p>
     <label>Name:</label>
     {{input type="text" value=model.director.name}}
@@ -19,6 +17,4 @@
   </p>
   
   <input type="submit">
-</form>--}}
-
-{{director-form model=model dynamicAction='updateDirector'}}
+</form>

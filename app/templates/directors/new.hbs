@@ -1,6 +1,6 @@
 <h2>New Director</h2>
 
-<form {{action 'createDirector' model.director on="submit"}}>
+{{!--<form {{action 'createDirector' model.director on="submit"}}>
   <p>
     <label>Name:</label>
     {{input type="text" value=model.director.name}}
@@ -19,4 +19,6 @@
   </p>
   
   <input type="submit">
-</form>
+</form>--}}
+
+{{director-form model=model dynamicAction='createDirector'}}
