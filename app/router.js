@@ -19,6 +19,7 @@ Router.map(function() {
     this.route('director', {
       path: ':director_id'
     });
+    this.route('new');
   });
 });
 
