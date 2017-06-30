@@ -1,0 +1,6 @@
+<h2>All cats</h2>
+{{#each model as |cat|}}
+  <p>
+    Name: {{cat.name}} | Age: {{cat.age}} | Colour: {{cat.colour}} | {{#link-to 'cats.cat' cat}}Show{{/link-to}}
+  </p>
+{{/each}}

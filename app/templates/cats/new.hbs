@@ -1,0 +1,12 @@
+<h2>New CAT</h2>
+
+<form {{action "create" model on="submit"}} >
+  <p>Name:</p>
+  {{input type="text" value=model.name placeholder="Name of predator"}}
+  <p>Age:</p>
+  {{input type="number" value=model.age placeholder="Age"}}
+  <p>Colour:</p>
+  {{input type="text" value=model.colour placeholder="Roawr"}}
+  
+  <input type="submit">
+</form>
