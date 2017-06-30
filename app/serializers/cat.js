@@ -46,6 +46,16 @@ export default DS.JSONSerializer.extend({
     // 2) This will then turn JSONSerializer payload by returning JSON:API format for us
     return this._super(store, primaryModelClass, newPayload, id, requestType);
   },
+  // Now we normalize the findRecord response as it is a different payload structure to findAll
+  normalizeFindRecordResponse(store, primaryModelClass, payload, id, requestType){
+    let newPayload = {
+      id: payload.id,
+      name: payload.name,
+      age: payload.age,
+      colour: payload.secret.color      
+    }
+    return this._super(store, primaryModelClass, newPayload, id, requestType);
+  },
   // Serialize will transform the payload that returns back to the server
   // Here we rename the colour property
   serialize(snapshot, options){
