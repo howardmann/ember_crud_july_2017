@@ -29,6 +29,7 @@ Router.map(function() {
     });
     this.route('new');
   });
+  this.route('weather', function(){});
 });
 
 export default Router;
