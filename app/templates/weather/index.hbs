@@ -2,4 +2,8 @@
 
 <p>Timezone: {{model.timezone}}</p>
 <p>Current: {{model.current}}</p>
-<p>Outlook: {{model.outlook}}</p>
+<p>Today: {{datetime model.time}}</p>
+
+<div style="border: 1px solid hotpink; padding: 5px">
+  {{weather-outlook model=model.outlook}}
+</div>

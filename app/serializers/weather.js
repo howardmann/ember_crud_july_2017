@@ -19,8 +19,9 @@ export default DS.Serializer.extend({
         latitude: hash.latitude,
         longitude: hash.longitude,
         timezone: hash.timezone,
+        time: hash.currently.time,
         current: hash.hourly.summary,
-        outlook: hash.daily.summary                  
+        outlook: hash.daily.data                  
       }
     }
   }

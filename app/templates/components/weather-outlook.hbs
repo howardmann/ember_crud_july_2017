@@ -1,0 +1,7 @@
+<h2>weather-outlook component</h2>
+{{#each model as |day|}}
+  <p>Date: {{datetime day.time}}</p>
+  <p>Temperature: {{fahrenheit-celsius day.temperatureMin 'toCelsius'}} | {{day.temperatureMin}} °F</p>
+  <p>Summary: {{day.summary}}</p>
+  <hr>
+{{/each}}
