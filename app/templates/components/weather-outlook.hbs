@@ -3,5 +3,6 @@
   <p>Date: {{datetime day.time}}</p>
   <p>Temperature: {{fahrenheit-celsius day.temperatureMin 'toCelsius'}} | {{day.temperatureMin}} °F</p>
   <p>Summary: {{day.summary}}</p>
+  <button {{action 'alert' day.icon}}>Click me</button>
   <hr>
 {{/each}}
