@@ -1,0 +1,12 @@
+<h2>Google locate</h2>
+
+{{!--Here we render our google-geolocator component passing in our route action (DDAU principle)--}}
+<div style="border: 1px solid chartreuse; padding: 5px">
+  {{google-geolocator dynamicAction='updateCoordinates'}}
+</div>
+
+<p>Timezone: {{model.weather.timezone}}</p>
+<p>Current: {{model.weather.current}}</p>
+<p>Coordinates: {{model.coordinates.lat}}, {{model.coordinates.lng}}</p>
+
+<button {{action 'fetchWeather'}}>FETCH WEATHER</button>

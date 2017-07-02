@@ -30,6 +30,7 @@ Router.map(function() {
     this.route('new');
   });
   this.route('weather', function(){});
+  this.route('google');
 });
 
 export default Router;
